@@ -1,0 +1,8 @@
+@'
+name = "cooking-class-landingpage"
+compatibility_date = "2025-11-24"
+
+[site]
+bucket = "./dist"
+entry-point = "workers-site"
+'@ | Out-File -Encoding UTF8 .\wrangler.toml
