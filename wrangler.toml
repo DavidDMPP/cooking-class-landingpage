@@ -1,15 +1,6 @@
-# hapus file lama (jika ada)
-Remove-Item .\wrangler.toml -Force -ErrorAction SilentlyContinue
-
-# buat file wrangler.toml yang valid
-@'
 name = "cooking-class-landingpage"
 compatibility_date = "2025-11-24"
 
 [site]
 bucket = "./dist"
 entry-point = "workers-site"
-'@ | Set-Content -Encoding UTF8 .\wrangler.toml
-
-# cek isi file untuk konfirmasi
-Get-Content .\wrangler.toml
